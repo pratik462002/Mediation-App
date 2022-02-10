@@ -141,7 +141,7 @@ body {
 .sounds-select button {
   color: white;
   width: fit-content;
-  
+
   background: white;
   font-size: 20px;
   border: 2px solid white;
@@ -190,4 +190,54 @@ body {
   position: absolute;
   font-size: 50px;
   bottom: 5%;
+}
+
+.contact {
+  margin: auto;
+  text-align: center;
+  background: rgba(196, 196, 196, 0.1);
+  backdrop-filter: blur(23px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 44px;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px 75px;
+  margin-top: 20vh;
+}
+
+.contact h1 {
+  text-transform: uppercase;
+  color: white;
+
+}
+
+.contact p{
+  color: #ffffff;
+  margin: 0;
+  font-weight: 350;
+  
+}
+
+.contact p span{
+  font-weight: 500;
+}
+
+.socialmedia{
+  margin-top: 25px;
+}
+
+.socialmedia img{
+  width: 40px;
+  margin: 10px;
+}
+
+small{
+  color: white;
+  opacity: .5;
+  font-weight: 250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
 }
