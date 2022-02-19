@@ -55,6 +55,9 @@
   color: white;
   margin-left: 12%;
 }
+.none {
+  display: none;
+}
 .quote {
   text-transform: uppercase;
   font-size: 40px;
@@ -209,35 +212,304 @@ body {
 .contact h1 {
   text-transform: uppercase;
   color: white;
-
 }
 
-.contact p{
+.contact p {
   color: #ffffff;
   margin: 0;
   font-weight: 350;
-  
 }
 
-.contact p span{
+.contact p span {
   font-weight: 500;
 }
 
-.socialmedia{
+.socialmedia {
   margin-top: 25px;
 }
 
-.socialmedia img{
+.socialmedia img {
   width: 40px;
   margin: 10px;
 }
 
-small{
+small {
   color: white;
-  opacity: .5;
+  opacity: 0.5;
   font-weight: 250;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20vh;
+}
+.background-img2 {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .roundbar {
+    margin-top: 1rem;
+    background: transparent;
+    /* backdrop-filter: blur(4px); */
+
+    /* border-radius: 43px; */
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-brand svg {
+    padding: 2px;
+  }
+
+  .navbar-nav {
+    display: block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 36%;
+    /* margin: auto; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: "Spline Sans", sans-serif;
+    width: 70%;
+  }
+
+  .righticons p {
+    display: none;
+  }
+  .background-img2 {
+    z-index: -50;
+    position: fixed;
+    display: flex;
+    width: 150px;
+    height: 100vh;
+    /* display: block; */
+    /* width: 600px; */
+    /* height: 1000px;
+   width: 600px; */
+    /* object-fit: fit-content; */
+  }
+
+  .none {
+    display: block;
+    font-size: 120px;
+    margin-top:2rem;
+    margin-bottom: 1.5rem;
+  }
+  .background-img img {
+    /* display: none; */
+    position: absolute;
+    z-index: -60;
+
+    width: 100%;
+    height: 100vh;
+    object-fit: fit-content;
+  }
+
+  .main-text {
+    color: white;
+    margin-left: 5%;
+  }
+  .quote {
+    bottom: 12rem;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 75%;
+    margin-top: 24rem;
+    line-height: 35px;
+    font-weight: 300;
+    margin-bottom: 1.9rem;
+  }
+
+  .quote span {
+    font-weight: 500;
+  }
+
+  .CTA {
+    position: absolute;
+    bottom:7.5rem;
+    font-size: 18px;
+    width: 80%;
+    font-weight: 300;
+    opacity: 0.7;
+    line-height: 22px;
+    margin-top: 3rem;
+    margin-left: 5px;
+    letter-spacing: 0.04em;
+    margin-bottom: 2rem;
+  }
+
+  .Meditate-now {
+    position: absolute;
+    bottom: 4rem;
+    /* margin-left: 0px !important; */
+    padding-left: 0;
+    text-decoration: none;
+    /* justify-content: center; */
+    /* display: flex; */
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 20px;
+    padding: 10px 70px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.3px solid #ffffff;
+    /* box-sizing: border-box; */
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41px;
+  }
+
+  /* part 2
+   */
+  body {
+    margin: 0;
+    /* box-sizing: border-box;
+    background-color: aquamarine; */
+  }
+
+  .app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .time-select {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .time-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .time-button p {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .time-button img {
+    width: 50px;
+  }
+  .time-select,
+  .sounds-select {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+  }
+
+  .sounds-select button {
+    color: white;
+    width: fit-content;
+
+    background: white;
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .sound11 img {
+    padding: 15px;
+    width: 100px;
+  }
+  .time-select button {
+    color: white;
+    width: 50%;
+    height: 15%;
+    background: none;
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .timer {
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .timer svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+  }
+
+  .timer svg circle {
+    transition: all 0.2 ease-in-out;
+  }
+  .time-display {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    bottom: 5%;
+  }
+
+  .contact {
+    margin: auto;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.1);
+    backdrop-filter: blur(23px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 44px;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px 75px;
+    margin-top: 20vh;
+  }
+
+  .contact h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .contact p {
+    color: #ffffff;
+    margin: 0;
+    font-weight: 350;
+  }
+
+  .contact p span {
+    font-weight: 500;
+  }
+
+  .socialmedia {
+    margin-top: 25px;
+  }
+
+  .socialmedia img {
+    width: 40px;
+    margin: 10px;
+  }
+
+  small {
+    color: white;
+    opacity: 0.5;
+    font-weight: 250;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+  }
 }
