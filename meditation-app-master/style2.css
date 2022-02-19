@@ -366,106 +366,141 @@ small {
 
     border-radius: 41px;
   }
-
-  /* part 2
-   */
-  body {
-    margin: 0;
-    /* box-sizing: border-box;
-    background-color: aquamarine; */
-  }
-
-  .app {
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .time-select {
+  .app{
+    
     display: flex;
     flex-direction: column;
+  }
+
+
+  .time-select {
+    top: -120px;
+    position: fixed;
+    display: flex;
+    flex-direction:row;
+
+    /* position: absolute; */
+    /* height: 200px!important; */
+    /* top: 10rem; */
+    /* position: fixed; */
+    /* height:20%; */
+    /* display:flex; */
+    /* justify-content:space-evenly; */
+    /* flex-direction: row; */
+    /* flex-direction: block;  */
   }
 
   .time-button {
+    
+    padding: 30px;
+    margin: 5px;
+    height: max-content !important;
+    /* background-color: #ffffff; */
+    /* height: 50px; */
+    /* margin: 10px;
+    width: fit-content;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; */
+    /* justify-content: space-evenly; */
   }
   .time-button p {
-    font-size: 30px;
+    /* font-size: 30px;
     line-height: 30px;
-    margin-top: 10px;
+    margin-top: 10px; */
   }
 
   .time-button img {
-    width: 50px;
-  }
-  .time-select,
-  .sounds-select {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    flex: 1;
+    display: none;
+    /* display: none;
+    width: 50px; */
   }
 
+
+
+  .sounds-select{
+    
+    position: fixed;
+    bottom: 0;
+    top: 100px;
+    margin-top: 300px;
+    /* height: 30%!important;  */
+    display: flex;
+    flex-direction:row;
+
+
+    /* position: relative;
+    top: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row; */
+  }
   .sounds-select button {
-    color: white;
+    /* height: max-content; */
+  
+    padding: 8px;
+    margin: 5px;
+    /* height: max-content !important; */
+   
+    /* color: white;
     width: fit-content;
 
     background: white;
     font-size: 20px;
     border: 2px solid white;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 20px; */
   }
   .sound11 img {
-    padding: 15px;
-    width: 100px;
+    /* padding: 15px;
+    width: 100px; */
   }
   .time-select button {
-    color: white;
+    /* color: white;
     width: 50%;
     height: 15%;
     background: none;
     font-size: 20px;
     border: 2px solid white;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 20px; */
   }
 
   .timer {
-    position: relative;
-    height: 80%;
+    position: fixed;
+    top: 30%;
+    height: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-    flex: 1;
+    flex-direction: column; */
+    /* flex: 1;
   }
 
   .timer svg {
-    position: absolute;
+    /* position: absolute;
     height: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
-    pointer-events: none;
+    pointer-events: none; */
   }
 
   .timer svg circle {
     transition: all 0.2 ease-in-out;
   }
   .time-display {
-    color: white;
+    position: absolute;
+    top: 50px;
+    /* color: white;
     position: absolute;
     font-size: 50px;
-    bottom: 5%;
-  }
+    bottom: 5%; */
+  } 
 
   .contact {
+    /* width: 70%; */
+    /* padding: ; */
     margin: auto;
     text-align: center;
     background: rgba(196, 196, 196, 0.1);
@@ -475,7 +510,7 @@ small {
     border-radius: 44px;
     width: fit-content;
     height: fit-content;
-    padding: 50px 75px;
+    padding: 40px 50px;
     margin-top: 20vh;
   }
 
